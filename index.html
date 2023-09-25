@@ -83,6 +83,16 @@
             </div>
         </div>
     </div>
+		当前时间：<div id="datetime">
+	        <script>
+	//setInterval("document.getElementById("datetime").innerHTML = new Date().toLocaleString();",1000);
+	            setInterval("getTime()", 1000);
+	            function getTime(){
+	                // document.getElementById('datetime').innerHTML=new Date().toLocaleString();
+	                document.getElementById("datetime").innerHTML = new Date().toLocaleString();
+	            }
+	        </script>
+	</div>
     <!--轮播-->
     <div id="carouselControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner max-h">

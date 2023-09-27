@@ -83,16 +83,6 @@
             </div>
         </div>
     </div>
-		当前时间：<div id="datetime">
-	        <script>
-	//setInterval("document.getElementById("datetime").innerHTML = new Date().toLocaleString();",1000);
-	            setInterval("getTime()", 1000);
-	            function getTime(){
-	                // document.getElementById('datetime').innerHTML=new Date().toLocaleString();
-	                document.getElementById("datetime").innerHTML = new Date().toLocaleString();
-	            }
-	        </script>
-	</div>
     <!--轮播-->
     <div id="carouselControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner max-h">
@@ -128,7 +118,17 @@
         </a>
     </div>
     <div class="my-5">
-        <div class="text-center">
+        <div class="text-center"	当前时间：<div id="datetime">
+	        <script>
+	//setInterval("document.getElementById("datetime").innerHTML = new Date().toLocaleString();",1000);
+	            setInterval("getTime()", 1000);
+	            function getTime(){
+	                // document.getElementById('datetime').innerHTML=new Date().toLocaleString();
+	                document.getElementById("datetime").innerHTML = new Date().toLocaleString();
+	            }
+	        </script>
+	</div>>
+	
             <h2 class="color">欢&nbsp;迎&nbsp;您&nbsp;！</h2>
             <h6 class="my-3">最专业、最权威的技术团队用心做事，为玩家们提供最领先的H系模组服务</h6>
         </div>

@@ -47,7 +47,22 @@
             <a class="del1" href="javascript:void(0);"><i class="fa fa-times fa-2x"></i></a>
         </div>
         <h2 class="text-center mb-5">你好，TOHEX</h2>
-        <h2>您已经登录，当前模式：访客</h2>
+        <form>
+            <div class="input__block form-group">
+                <input type="text" id="name" name="name"required class="input text-center form-control"/>
+                <label for="name" class="label">姓名</label>
+            </div>
+            <div class="input__block form-group">
+                <input type="email" id="email" name="email" required class="input text-center form-control"/>
+                <label for="email" class="label">邮箱</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">记住我？</label>
+            </div>
+        </form>
+        <button type="button" class="btn btn-primary btn-block my-2"><a href="login.html">注册/登录</a></button>
+        <h6 class="text-center"><a href="">管理员入口</a><span class="mx-4">|</span><a href="">我不想注册/登录</a></h6>
     </div>
 </div>
 <div class="main">
@@ -112,7 +127,7 @@
 	                document.getElementById("datetime").innerHTML = new Date().toLocaleString();
 	            }
 	        </script>
-	</div>>
+	</div>
 	<div class="my-5">
             <h2 class="color" class="text-center">欢&nbsp;迎&nbsp;您&nbsp;！</h2>
             <h6 class="my-3" class="text-center">最专业、最权威的技术团队用心做事，为玩家们提供最领先的H系模组服务</h6>
@@ -128,6 +143,11 @@
                 <a class="nav-link" href="question.html">
                     <i class="fa fa-university "></i>
                     <h6 class="size">常见问题</h6>
+                </a>
+	                <li class="nav-item">
+                <a class="nav-link" href="work.html">
+                    <i class="fa fa-university "></i>
+                    <h6 class="size">开发者</h6>
                 </a>
             </li>
             <li class="nav-item">

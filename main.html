@@ -133,17 +133,22 @@
         </div>
 	    <br>
 
-        <script language="javascript" type="text/javascript">
-	var interval = 1000;
-	function ShowCountDown(year,month,day,divname){var now = new Date();
-	var endDate = new Date(year, month-1, day);
-	var leftTime=endDate.getTime()-now.getTime();
-	var leftsecond = parseInt(leftTime/1000);//var day1=parseInt(leftsecond/(24*60*60*6));var day1=Math.floor(leftsecond/(60*60*24));var hour=Math.floor((leftsecond-day1*24*60*60)/3600);var minute=Math.floor((leftsecond-day1*24*60*60-hour*3600)/60);var second=Math.floor(leftsecond-day1*24*60*60-hour*3600-minute*60);
-	var cc = 
-	document.getElementById(divname);
-	cc.innerHTML = "蘑菇岛地图更新倒计时："+year+"年"+month+"月"+day+"日还有："+day1+"天"+hour+"小时"+minute+"分"+second+"秒";}window.setInterval(function(){ShowCountDown(2023,10,25,'divdown1');}, interval);
-        </script>
-
+<h1>距离Among Us新地图到来还剩：</h1>
+  <div id="countdown"></div>
+  <script>
+    var targetDate = new Date("2023-10-25T01:00:00");
+    function updateCountdown() {
+      var now = new Date();
+      var timeLeft = targetDate - now;
+      var days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+      document.getElementById("countdown").innerHTML = days + "天 " + hours + "小时 " + minutes + "分钟 " + seconds + "秒";
+      setTimeout(updateCountdown, 1000);
+    }
+    updateCountdown();
+  </script>
 
 	    
         <ul class="nav justify-content-center nav-head">
